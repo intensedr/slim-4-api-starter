@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     public function __invoke(Request $request, Response $response, $args): Response
     {
-        $response->getBody()->write(json_encode(['Hello world!']));
+        $response->getBody()->write(json_encode(['Hello ps!']));
        
         return $response->withHeader('Content-Type', 'application/json');
     }
