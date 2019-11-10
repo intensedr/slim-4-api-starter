@@ -1,0 +1,27 @@
+{
+    "name": "intensedr/slim4-starter",
+    "description": "A skeleton structure for Slim 4 framework",
+    "keywords": ["framework", "slim"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "slim/slim": "^4.3",
+        "slim/psr7": "^0.6.0",
+        "vlucas/phpdotenv": "^3.6",
+        "php-di/slim-bridge": "^3.0",
+        "illuminate/database": "^6.5",
+        "illuminate/pagination": "^6.5",
+        "robmorgan/phinx": "^0.11.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}
